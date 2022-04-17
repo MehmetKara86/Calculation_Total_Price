@@ -1,0 +1,32 @@
+/* Author: Mehmet Kara
+   Date : 17.04.2022,
+   program name: Calculation total price
+ */
+
+import java.util.Scanner;
+
+public class kdvHesaplama {
+
+    public static void main (String [] arg){
+
+        double price, taxRate=0.18, taxValue, totalPrice;
+
+        Scanner enter = new Scanner(System.in);
+
+        System.out.print("Please enter the product price: ");
+
+        price = enter.nextDouble();
+
+        taxValue = price * taxRate;
+
+        totalPrice = price + taxValue;
+
+        System.out.println("Your product value is " + price + " dolars");
+
+        System.out.println("You must pay tax value: " + taxValue + " dolars");
+
+        System.out.println("Your product total value is " + totalPrice + " dolars");
+
+        System.out.println("Thank you for choosen us!");
+    }
+}
